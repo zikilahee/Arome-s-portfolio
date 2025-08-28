@@ -1,0 +1,116 @@
+header {
+    background-color: rgba(148, 126, 0, 0.692);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(214, 198, 108);
+    padding: 1rem 2rem;
+    width: 100%;
+    height: auto;
+  }
+*{
+    margin: 0;
+    padding: ;
+    box-sizing: border-box;
+}
+
+.right-side{
+    width: 550px;
+    
+}
+
+/* Owner portfolio text */
+.owner-portfolio {
+    margin: 20px;
+  }
+
+/* Profile picture responsive */
+.profile-picture {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+  }
+
+.left-side{
+ display: flex;
+ flex-direction: column;
+ height: 400px;
+ width: 900px;
+
+}
+
+
+.top{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 25px;
+    
+}
+
+
+.about{
+    margin-right: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:transparent;
+    border: none;
+}
+
+.contact{
+    margin-right: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:transparent;
+    border: none; 
+}
+
+.credit{
+    margin-right: px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:transparent;
+    border: none;
+}
+
+.about:hover{
+    cursor: pointer;
+    color: rgb(87, 68, 42);
+}
+
+.contact:hover{
+    cursor: pointer;
+    color: rgb(87, 68, 42);
+}
+
+.credit:hover{
+    cursor: pointer;
+    color: rgb(87, 68, 42);
+}
+
+
+.bottom{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+.owner-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.intro{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px; 
+    font-size: 20px;
+
+}
+
+.title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px; 
+    font-size: 20px;
+}

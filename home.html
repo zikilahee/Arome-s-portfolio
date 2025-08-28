@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Business Portfoilo | [Abdullahi Arome]
+    </title>
+    <link rel="stylesheet" href="home-header.css">
+    <link rel="stylesheet" href="home-body.css">
+    <link rel="stylesheet" href="home-main.css">
+</head>
+
+
+   
+
+    <body>
+
+        
+        <header>
+            <div class=" right-side reveal">
+                <p class="owner-portfolio">AROME'S PORTFOLIO</p>
+                <img class="profile-picture" src="thumbnails/picture-1.jpg" alt="">
+            </div>
+    
+            <div class="left-side reveal">
+                <div class="top">
+                    <button class="about">ABOUT</button>
+                    <button class="contact">CONTACT</button>
+                    <button class="credit">CREDIT</button>
+                </div>
+               
+    
+               <div class="bottom">
+                 <p class="owner-name">
+                ABDULLAHI AROME
+            </p>
+    
+            <p class="intro">
+                I am a passionate business professional <br>
+                with over a decade of experience in brand <br> 
+                management, marketing, and leadership.Throughout <br> 
+                my career, I have worked with <br>
+                both established companies and growing startups, <br> 
+                helping them design strategies that build trust, <br>
+                grow revenue, and stand the test of time. <br>
+            </p>
+            <p class="title">
+                Brand Manager Leader, MBA.
+            </p>
+        </div>
+               
+            </div>
+        </header>
+
+        <main>
+            <div class="main-top reveal">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                      <img src="thumbnails/img1.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide fade">
+                      <img src="thumbnails/picture-1.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide fade">
+                      <img src="thumbnails/img3.jpg" alt="Image 3">
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="main-middle reveal">
+                <div class="left-middle">
+
+                    <div class="write-up">
+                        <p class="sub-heading1">
+                            In Which Situations or Tasks <br>
+                             Can I Be Of Help To You? 
+                         </p>
+    
+                         <ol>
+                            <li>Brand Strategy & Positioning</li>
+                            <li>Marketing Campaigns & Growth</li>
+                            <li>Business Development</li>
+                            <li>Revenue Optimization</li>
+                            <li>Analyze your business needs</li>
+                            <li>Create a growth strategy</li>
+                            <li>Execute and Monitor Campaigns</li>
+                            <li>Measure results and optimize</li>
+                         </ol>
+                    </div>
+                  
+
+                </div>
+
+                <div class="right-middle">
+                    <div class="write-up2">
+                        <p class="quote">
+                            "A strong brand is not just built on products, <br>
+                            but on the trust and value it creates in people's lives."
+                        </p>
+                    </div>
+               </div>
+
+            </div>
+
+            <div class="main-buttom reveal">
+
+                <div class="left">
+                    <div class="write-up3">
+                        <p class="sub-heading1">
+                            Career Highlights
+                        </p>
+    
+                        <ol>
+                            <li>Brand Manager - ABC Foods Ltd (2018 - Present)</li>
+                            <li>Marketing Executive - XYZ Beverages (2015 - 2018)</li>
+                            <li>Business Development officer - Global Trade Co. (2012 - 2015)</li>
+                            <li>Graduate Trainee - National FMCG Group (2010 - 2012)</li>
+                         </ol>
+                    </div>
+                   
+
+                </div>
+
+                <div class="middle">
+                    <div class="write-up4">
+                        <p class="sub-heading1">
+                            Education
+                        </p>
+    
+                        <ol>
+                            <li>Master of Business Administration(MBA) - [University Name], [Year]</li>
+                            <li>Bachelor's Degree in Marketing - [University name], [Year]</li>
+                            <li>Professional Ceritification in Brand Management - [Institute Name]</li>
+                            <li>Leadership & Management Training - [Program/Organization]</li>
+                         </ol>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="write-up5">
+                        <p class="sub-heading1">
+                            I'm in love with
+                        </p>
+    
+                        <ol>
+                            <li>Building brands that create real value for people</li>
+                            <li>Helping businesses grow through stratergy and innovation</li>
+                            <li>Leading and mentoring teams to reach their potential</li>
+                            <li>Finding solutions to business challenges</li>
+                            <li>Continous learning and self-improvement</li>
+                         </ol>
+                    </div>
+                   
+
+                </div>
+            </div>
+        </main>
+
+      
+        <!-- Scroll to Top Button -->
+<button id="scrollTopBtn">↑</button>
+
+<script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+  
+    // Show button when user scrolls 200px down
+    window.addEventListener("scroll", () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollTopBtn.classList.add("show");
+      } else {
+        scrollTopBtn.classList.remove("show");
+      }
+    });
+  
+    // Scroll to top when clicked
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+
+
+
+<script>
+    function revealSections() {
+      const reveals = document.querySelectorAll(".reveal");
+  
+      reveals.forEach((reveal) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+        const revealPoint = 100; // when to trigger the reveal
+  
+        if (revealTop < windowHeight - revealPoint) {
+          reveal.classList.add("active");
+        } else {
+          reveal.classList.remove("active");
+        }
+      });
+    }
+  
+    window.addEventListener("scroll", revealSections);
+  
+    // Run once when page loads
+    revealSections();
+  </script>
+
+
+
+<script>
+    let index = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      index++;
+      if (index > slides.length) {index = 1}    
+      slides[index-1].style.display = "block";  
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+    </script>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
